@@ -16,11 +16,11 @@ determined to write your microservice in COBOL, no one's going to stop you
 from using our config server except for yourself.
 
 In order to use the Gambit Configuration Server your microservice is going to
-need a bootstrap.yml or bootstrap.properties file. In that file you need to
-define the following attributes:
+need a bootstrap.yml or bootstrap.properties file in its src/main/resources
+directory. In that file you need to define the following attributes:
 
-* Application name
-* The location of the configuration server
+* Application name via `spring.application.name`
+* The URI of the configuration server via `spring.cloud.config.uri`
 
 Make sure to either add the Spring Cloud Starter Config dependency in your
 pom.xml or to select Config Client under the Cloud Config heading as you create
