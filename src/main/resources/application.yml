@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/revature_hydra/hydra-configuration.git
+          uri: https://gitlab.com/revature_hydra/hydra-configuration/tree/feature-gambit-config-dev
           username: revdum
           password: p4ssw0rd
   application:
