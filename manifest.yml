@@ -1,0 +1,6 @@
+applications:
+- name: gambit-config-server
+  memory: 1GB
+  random-route: true
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/configuration-service-0.0.1-SNAPSHOT.jar

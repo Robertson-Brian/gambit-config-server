@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name:
+      gambit-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/revature-gambit/gambit-configuration
+          username: revdum
+          password: p4ssw0rd
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: gambit
+    bootstrap-servers:
+    - ${KAFKA_URL}
