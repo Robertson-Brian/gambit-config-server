@@ -10,4 +10,4 @@ spring:
           username: revdum
           password: p4ssw0rd
   application:
-    name: gambit-config-serve
+    name: gambit-config-server
