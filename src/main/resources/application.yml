@@ -6,8 +6,12 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/revature_hydra/hydra-configuration/tree/feature-gambit-config-dev
+          uri: https://gitlab.com/revature-gambit/gambit-configuration
           username: revdum
           password: p4ssw0rd
-  application:
-    name: gambit-config-server
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: gambit
+    bootstrap-servers:
+    - ${KAFKA_URL}
