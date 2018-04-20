@@ -1,5 +1,5 @@
 applications:
-- name: gambit-config-serve
+- name: gambit-config-server
   memory: 1GB
   random-route: true
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
