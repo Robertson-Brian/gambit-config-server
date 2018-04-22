@@ -10,6 +10,18 @@ via Docker Swarm Mode.
 
 ## Using Your Gambit Configuration Server
 
+In order to use the Gambit Configuration Server your project is going to need to
+be a Spring Cloud Config Client. This means that when you are creating your
+project you should select the *Config Client* option in Spring Toole Suite or
+add the following dependency to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+```
+
 The following setup assumes that you are building your new microservice for
 the Revature Gambit ecosystem using Spring Boot. Certainly, if you are
 determined to write your microservice in COBOL, no one's going to stop you
