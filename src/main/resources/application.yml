@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/revature-gambit/gambit-configuration/tree/feature-testing
+          uri: https://gitlab.com/riggtravis/config-debug
           username: revdum
           password: p4ssw0rd
   kafka:
