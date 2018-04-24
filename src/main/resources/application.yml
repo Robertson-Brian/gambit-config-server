@@ -1,6 +1,8 @@
+#Server Configuration
 server:
   port: 8888
 
+#Spring Configuration
 spring:
   application:
     name:
@@ -9,9 +11,12 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/riggtravis/config-debug
-          username: revdum
-          password: p4ssw0rd
+          uri: https://gitlab.com/riggtravis/config-debug.git
+#          username:
+#          password:
+          clone-on-start: true
+
+#Kafka Configuration
   kafka:
     consumer:
       auto-offset-reset: earliest
