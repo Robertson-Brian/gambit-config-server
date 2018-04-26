@@ -11,9 +11,9 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_HOME}
-#          username:
-#          password:
+          uri: ${CONFIG_REPO_URL}
+          username: ${CONFIG_REPO_USERNAME}
+          password: ${CONFIG_REPO_PASSWORD}
           clone-on-start: true
 
 #Kafka Configuration
