@@ -15,11 +15,3 @@ spring:
           username: ${CONFIG_REPO_USERNAME}
           password: ${CONFIG_REPO_PASSWORD}
           clone-on-start: true
-
-#Kafka Configuration
-  kafka:
-    consumer:
-      auto-offset-reset: earliest
-      group-id: gambit
-    bootstrap-servers:
-    - ${KAFKA_URL}
