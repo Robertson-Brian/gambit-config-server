@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/revature-gambit/gambit-configuration
+          uri: ${CONFIG_HOME}
           username: revdum
           password: p4ssw0rd
   kafka:
