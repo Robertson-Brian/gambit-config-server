@@ -9,9 +9,9 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_HOME}
-          username: revdum
-          password: p4ssw0rd
+          uri: ${CONFIG_REPO_URL}
+          username: ${CONFIG_REPO_USERNAME}
+          password: ${CONFIG_REPO_PASSWORD}
   kafka:
     consumer:
       auto-offset-reset: earliest
