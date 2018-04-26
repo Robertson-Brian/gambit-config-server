@@ -1,6 +1,8 @@
+#Server Configuration
 server:
   port: 8888
 
+#Spring Configuration
 spring:
   application:
     name:
@@ -12,6 +14,7 @@ spring:
           uri: ${CONFIG_REPO_URL}
           username: ${CONFIG_REPO_USERNAME}
           password: ${CONFIG_REPO_PASSWORD}
+          clone-on-start: true
   kafka:
     consumer:
       auto-offset-reset: earliest
