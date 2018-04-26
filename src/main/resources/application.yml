@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/riggtravis/config-debug.git
+          uri: ${CONFIG_HOME}
 #          username:
 #          password:
           clone-on-start: true
