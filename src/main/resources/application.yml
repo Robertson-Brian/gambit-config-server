@@ -1,6 +1,8 @@
+#Server Configuration
 server:
   port: 8888
 
+#Spring Configuration
 spring:
   application:
     name:
@@ -9,9 +11,12 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/revature-gambit/gambit-configuration
-          username: revdum
-          password: p4ssw0rd
+          uri: ${CONFIG_HOME}
+#          username:
+#          password:
+          clone-on-start: true
+
+#Kafka Configuration
   kafka:
     consumer:
       auto-offset-reset: earliest
